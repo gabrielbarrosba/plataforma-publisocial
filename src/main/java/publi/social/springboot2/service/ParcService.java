@@ -1,7 +1,7 @@
 package publi.social.springboot2.service;
 
 import publi.social.springboot2.domain.Parceiro;
-import publi.social.springboot2.repository.UserRepository;
+import publi.social.springboot2.repository.ParcRepository;
 import publi.social.springboot2.requests.ParcPostRequestBody;
 import publi.social.springboot2.requests.ParcPutRequestBody;
 
@@ -17,7 +17,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class ParcService {
 
-    private final UserRepository userRepository;
+    private final ParcRepository userRepository;
 
     public List<Parceiro> listAll(){
         return userRepository.findAll();
